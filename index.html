@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bites noran</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <ul class="nav-center">
+        <li onclick="window.scrollTo({top: 0, behavior: 'smooth'})">HOME</li>
+        <li onclick="location.href='#cookies-section'">COOKIES</li>
+        <li onclick="location.href='#brownies-section'">BROWNIES</li>
+        <li onclick="location.href='#about-section'">ABOUT</li>
+        <li onclick="location.href='#reviews-section'">REVIEWS</li>
+    </ul>
+
+    <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user" onclick="document.getElementById('contact-modal').style.display='flex'"></i>
+    </div>
+
+</nav>
+
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="4" required></textarea>
+            <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<section class="hero">
+
+    <video autoplay muted loop class="back-video">
+        <source src="imeg/cok.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1>Happiness in Every Bite</h1>
+        <p>Freshly baked with love</p>
+
+        <button onclick="location.href='#cookies-section'">
+            Order Now
+        </button>
+    </div>
+
+</section>
+
+<section id="cookies-section">
+
+    <h2 class="section-title">Cookies</h2>
+
+    <div class="products-flex-container">
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n1.jpg">
+
+                <div class="overlay">
+                    <h3>Classic Choc</h3>
+                    <p>7 LYD</p>
+
+                    <button class="add-btn">
+                        Order NOW
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n2.jpg">
+
+                <div class="overlay">
+                    <h3>Crunchy lotus bite</h3>
+                    <p>8 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n3.jpg">
+
+                <div class="overlay">
+                    <h3>Pistachio white choc</h3>
+                    <p>8 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n4.jpg">
+
+                <div class="overlay">
+                    <h3>Salted caramel crunch</h3>
+                    <p>10 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n5.jpg">
+
+                <div class="overlay">
+                    <h3>Valvet white choc</h3>
+                    <p>10 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/n6.jpg">
+
+                <div class="overlay">
+                    <h3>Cookie sandwich</h3>
+                    <p>9 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="brownies-section">
+
+    <h1 class="section-title">Brownies</h1>
+
+    <div class="products-flex-container">
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m1.jpg">
+
+                <div class="overlay">
+                    <h3>Clssic brookie</h3>
+                    <p>5 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m2.jpg">
+
+                <div class="overlay">
+                    <h3>Caramel brownie swirl</h3>
+                    <p>6 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m3.jpg">
+
+                <div class="overlay">
+                    <h3>Oreo blast brownie</h3>
+                    <p>7 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m4.jpg">
+
+                <div class="overlay">
+                    <h3>Velvety chocolate melt</h3>
+                    <p>6 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m5.jpg">
+
+                <div class="overlay">
+                    <h3>Campfire brownie</h3>
+                    <p>10 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper">
+
+                <img src="imeg/m6.jpg">
+
+                <div class="overlay">
+                    <h3>Lotus biscoff brownie</h3>
+                    <p>9 LYD</p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about-section">
+
+    <div class="about-container">
+
+        <div class="about-text-content">
+
+            <h2 class="about-title">About Us</h2>
+
+            <p class="about-description">
+                At Sweet Bites, we believe that sweets are more than just treats they are a language of love and joy , Our journey started with a passion for crafting the finest handmade cookies and brownies, using only premium ingredients to ensure an extraordinary experience that takes you away with every single bite
+            </p>
+
+        </div>
+
+        <div class="about-img-wrapper">
+
+            <img src="imeg/q1.jpg" class="about-pic cookies-img" alt="Cookies">
+
+            <img src="imeg/q2.jpg" class="about-pic brownies-img" alt="Brownies">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="reviews-section">
+
+    <h2 class="section-title">CUSTOMER REVIEWS</h2>
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+
+            <img src="imeg/r1.jpg" class="review-img">
+
+            <h3>Julian</h3>
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+                “The cookies and brownies are absolutely divine! Every bite is soft, rich, and perfectly baked with a deep chocolate flavor. It feels like a little moment of happiness, and I always find myself coming back for more"
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="imeg/r2.jpg" class="review-img">
+
+            <h3>Chloe</h3>
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+                “Amazing taste and top-quality treats! The cookies are perfectly chewy and the brownies are rich and fudgy. I especially love the different flavors—they’re fresh, balanced, and perfect for gifting too. Really impressive quality!"
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="imeg/r3.jpg" class="review-img">
+
+            <h3>Moreen</h3>
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+                “A truly comforting cookies & brownies experience every time. The brownies are moist and chocolatey, and the cookies are soft with the perfect sweetness. Every bite feels warm, homemade, and special"
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>Sweet Bites</h2>
+
+            <p>
+                Freshly baked cookies & brownies made with love, passion,
+                and the finest ingredients to make every bite unforgettable.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+             <a href="#cookies-section">Cookies</a>
+<a href="#brownies-section">Brownies</a>
+<a href="#about-section">About</a>
+<a href="#contact-section">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Sweet Bites | All Rights Reserved
+    </div>
+
+</footer>
+
+</body>
+</html>
