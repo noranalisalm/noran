@@ -1,7 +1,5 @@
-تفضل هذا هو الكود كاملاً، قمت فيه بحل مشكلة الـ `navbar` وتداخلها مع الفيديو، وتثبيت أبعاد الفيديو لكي لا "يتعوج" عند التصفح على الهاتف، مع الحفاظ على كل تنسيقاتك الأصلية كما طلبت:
 
-```css
-* { margin: 0;
+   *{ margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -44,7 +42,7 @@ body {
 .nav-center li {
     cursor: pointer;
     position: relative;
-    padding-bottom: 0.3125rem;
+    padding-bottom: 0.3125rem; /* 5px / 16 */
 }
 
 .nav-center li::after {
@@ -53,7 +51,7 @@ body {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 0.125rem;
+    height: 0.125rem; /* 2px / 16 */
     background: #ffd9a0;
     transition: 0.3s;
 }
@@ -64,7 +62,7 @@ body {
 
 .nav-icons {
     position: absolute;
-    right: 1.25rem;
+    right: 1.25rem; /* 20px / 16 */
     display: flex;
     gap: 1rem;
     color: white;
@@ -118,9 +116,9 @@ body {
 .hero-content button {
     padding: 0.8rem 2rem;
     background: transparent;
-    border: 0.125rem solid  #a6734c;
+    border: 0.125rem solid  #a6734c; /* 2px / 16 */
     color:white;
-    border-radius: 3.125rem;
+    border-radius: 3.125rem; /* 50px / 16 */
     cursor: pointer;
     font-size: 1rem;
     transition: 0.3s ease;
@@ -138,7 +136,7 @@ body {
 #brownies-section,
 #about-section,
 #reviews-section {
-    padding: 6.25rem 10%;
+    padding: 6.25rem 10%; /* 100px / 16 */
     text-align: center;
 }
 
@@ -146,7 +144,7 @@ body {
     color: #ffd9a0;
     margin-bottom: 3rem;
     font-size: 2.5rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.125rem; /* 2px / 16 */
 }
 
 /* PRODUCTS */
@@ -155,16 +153,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2.5rem; /* 40px / 16 */
 }
 
 .product-card {
-    width: 18.75rem;
-    height: 21.875rem;
+    width: 18.75rem; /* 300px / 16 */
+    height: 21.875rem; /* 350px / 16 */
     position: relative;
     overflow: hidden;
-    border-radius: 0.9375rem;
-    box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,0.3);
+    border-radius: 0.9375rem; /* 15px / 16 */
+    box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,0.3); /* 10px & 20px / 16 */
 }
 
 .image-wrapper {
@@ -194,7 +192,7 @@ body {
     align-items: center;
     opacity: 0;
     transition: 0.3s;
-    padding: 1.25rem;
+    padding: 1.25rem; /* 20px / 16 */
 }
 
 .product-card:hover .overlay {
@@ -206,10 +204,10 @@ body {
     background: rgb(104, 73, 47);
     color: white;
     border: none;
-    border-radius: 1.25rem;
+    border-radius: 1.25rem; /* 20px / 16 */
     cursor: pointer;
     font-weight: bold;
-    margin-top: 0.625rem;
+    margin-top: 0.625rem; /* 10px / 16 */
     transition: 0.3s;
 }
 
@@ -224,11 +222,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: 2.5rem; /* 40px / 16 */
     background: rgba(72, 33, 4, 0.4);
-    padding: 3.125rem;
-    border-radius: 1.5625rem;
-    backdrop-filter: blur(0.5rem);
+    padding: 3.125rem; /* 50px / 16 */
+    border-radius: 1.5625rem; /* 25px / 16 */
+    backdrop-filter: blur(0.5rem); /* 8px / 16 */
     text-align: left;
 }
 
@@ -239,7 +237,7 @@ body {
 .about-title {
     color: #ffd9a0;
     font-size: 2.8rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; /* 20px / 16 */
 }
 
 .about-description {
@@ -253,17 +251,17 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 20rem;
-    height: 25rem;
-    margin-left: 6.875rem;
+    width: 20rem; /* 320px / 16 */
+    height: 25rem; /* 400px / 16 */
+    margin-left: 6.875rem; /* 110px / 16 */
 }
 
 .about-pic {
-    width: 20rem;
-    height: 25rem;
+    width: 20rem; /* 320px / 16 */
+    height: 25rem; /* 400px / 16 */
     object-fit: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.4);
+    border-radius: 1.25rem; /* 20px / 16 */
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.4); /* 15px & 35px / 16 */
     position: absolute;
     top: 0;
     transition: opacity 0.6s ease-in-out, transform 0.6s ease;
@@ -293,34 +291,34 @@ body {
 .reviews-container {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: nowrap;
-    margin-top: 3.75rem;
+    gap: 1.5rem; /* تم تقليص المسافة قليلاً لضمان بقاء الكروت الثلاثة بجانب بعضها على سطر واحد */
+    flex-wrap: nowrap; /* يمنع الكروت من النزول لسطر جديد ويحافظ عليها بجانب بعضها */
+    margin-top: 3.75rem; /* 60px / 16 */
     width: 100%;
 }
 
 .review-card {
     background: rgba(255,255,255,0.12);
-    width: 20.625rem;
-    padding: 2.8125rem 1.875rem;
-    border-radius: 1.875rem;
+    width: 20.625rem; /* 330px / 16 */
+    padding: 2.8125rem 1.875rem; /* 45px & 30px / 16 */
+    border-radius: 1.875rem; /* 30px / 16 */
     transition: 0.5s ease;
-    backdrop-filter: blur(0.625rem);
-    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.25);
-    border: 0.0625rem solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(0.625rem); /* 10px / 16 */
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.25); /* 15px & 35px / 16 */
+    border: 0.0625rem solid rgba(255,255,255,0.08); /* 1px / 16 */
 }
 
 .review-card:hover {
-    transform: translateY(-0.9375rem);
+    transform: translateY(-0.9375rem); /* -15px / 16 */
 }
 
 .review-img {
-    width: 10.625rem;
-    height: 10.625rem;
+    width: 10.625rem; /* 170px / 16 */
+    height: 10.625rem; /* 170px / 16 */
     object-fit: cover;
     border-radius: 50%;
-    border: 0.3125rem solid #ffd9a0;
-    margin-bottom: 1.25rem;
+    border: 0.3125rem solid #ffd9a0; /* 5px / 16 */
+    margin-bottom: 1.25rem; /* 20px / 16 */
     transition: 0.4s;
 }
 
@@ -330,14 +328,14 @@ body {
 
 .review-card h3 {
     color: #ffe7c2;
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.9375rem; /* 15px / 16 */
     font-size: 2rem;
 }
 
 .stars {
     color: gold;
     font-size: 1.2rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; /* 20px / 16 */
 }
 
 .review-card p {
@@ -349,15 +347,15 @@ body {
 /* FOOTER */
 
 footer {
-    margin-top: 6.25rem;
-    padding: 5rem 10% 2.5rem;
+    margin-top: 6.25rem; /* 100px / 16 */
+    padding: 5rem 10% 2.5rem; /* 80px & 40px / 16 */
     background: linear-gradient(
         to top,
         rgba(25,10,2,0.95),
         rgba(63,30,10,0.95)
     );
-    border-top-left-radius: 3.75rem;
-    border-top-right-radius: 3.75rem;
+    border-top-left-radius: 3.75rem; /* 60px / 16 */
+    border-top-right-radius: 3.75rem; /* 60px / 16 */
     position: relative;
     overflow: hidden;
 }
@@ -365,32 +363,32 @@ footer {
 footer::before {
     content: "";
     position: absolute;
-    width: 21.875rem;
-    height: 21.875rem;
+    width: 21.875rem; /* 350px / 16 */
+    height: 21.875rem; /* 350px / 16 */
     background: rgba(255,217,160,0.05);
     border-radius: 50%;
-    top: -7.5rem;
-    right: -7.5rem;
+    top: -7.5rem; /* -120px / 16 */
+    right: -7.5rem; /* -120px / 16 */
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 3.125rem;
+    gap: 3.125rem; /* 50px / 16 */
     position: relative;
     z-index: 2;
 }
 
 .footer-box {
     flex: 1;
-    min-width: 14.375rem;
+    min-width: 14.375rem; /* 230px / 16 */
 }
 
 .footer-box h2,
 .footer-box h3 {
     color: #ffd9a0;
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.5625rem; /* 25px / 16 */
     font-size: 2rem;
 }
 
@@ -400,6 +398,7 @@ footer::before {
     font-size: 1rem;
 }
 
+/* التعديل المطلوب لترتيب الروابط عموديًا */
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -419,9 +418,9 @@ footer::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.1875rem;
+    bottom: -0.1875rem; /* -3px / 16 */
     width: 0%;
-    height: 0.125rem;
+    height: 0.125rem; /* 2px / 16 */
     background: #ffd9a0;
     transition: 0.4s;
 }
@@ -436,13 +435,13 @@ footer::before {
 
 .social-icons {
     display: flex;
-    gap: 1.125rem;
-    margin-top: 0.9375rem;
+    gap: 1.125rem; /* 18px / 16 */
+    margin-top: 0.9375rem; /* 15px / 16 */
 }
 
 .social-icons i {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 3.125rem; /* 50px / 16 */
+    height: 3.125rem; /* 50px / 16 */
     border-radius: 50%;
     background: rgba(255,255,255,0.08);
     display: flex;
@@ -452,26 +451,80 @@ footer::before {
     cursor: pointer;
     transition: 0.4s ease;
     font-size: 1.1rem;
-    border: 0.0625rem solid rgba(255,255,255,0.08);
+    border: 0.0625rem solid rgba(255,255,255,0.08); /* 1px / 16 */
 }
 
 .social-icons i:hover {
     background: #ffd9a0;
     color: #4b2108;
-    transform: translateY(-0.5rem) rotate(6deg);
+    transform: translateY(-0.5rem) rotate(6deg); /* -8px / 16 */
 }
 
 .footer-bottom {
     text-align: center;
     color: #f5e6d8;
-    margin-top: 3.75rem;
-    padding-top: 1.5625rem;
-    border-top: 0.0625rem solid rgba(255,255,255,0.15);
+    margin-top: 3.75rem; /* 60px / 16 */
+    padding-top: 1.5625rem; /* 25px / 16 */
+    border-top: 0.0625rem solid rgba(255,255,255,0.15); /* 1px / 16 */
     position: relative;
     z-index: 2;
 }
 
-/* MODAL */
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img-wrapper {
+        width: 100%;
+        height: 21.875rem; /* 350px / 16 */
+        margin-top: 5rem; 
+        margin-left: 0;
+    }
+
+    .about-pic {
+        width: 17.5rem;
+        height: 21.875rem;
+        position: relative;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; /* يسمح بالترتيب العمودي للشاشات الصغيرة فقط */
+    }
+
+    .review-img {
+        margin-top: 1.25rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* إضافة تنسيقات الـ Contact Us Modal الجديدة */
 .modal {
     display: none;
     position: fixed;
@@ -527,69 +580,4 @@ footer::before {
     cursor: pointer;
     font-weight: bold;
     color: #4b2d13;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .navbar {
-        position: relative;
-        flex-direction: column;
-        background: rgba(72, 33, 4, 0.9);
-        padding: 1rem 0;
-    }
-    .nav-center {
-        gap: 0.8rem;
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-    }
-    .nav-icons {
-        position: static;
-        margin-top: 0.5rem;
-    }
-    .hero {
-        height: 50vh;
-    }
-    .back-video {
-        height: 50vh;
-        object-fit: cover;
-    }
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-img-wrapper {
-        width: 100%;
-        height: 21.875rem;
-        margin-top: 5rem; 
-        margin-left: 0;
-    }
-    .about-pic {
-        width: 17.5rem;
-        height: 21.875rem;
-        position: relative;
-    }
-    .reviews-container {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .review-img {
-        margin-top: 1.25rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .review-card {
-        width: 90%;
-    }
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
 }
