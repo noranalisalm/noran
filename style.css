@@ -247,7 +247,7 @@ body {
 .about-description {
     color: white;
     line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .about-img-wrapper {
@@ -575,12 +575,12 @@ footer {
     }
 
     .about-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-        gap: 4rem;
-        margin-bottom: 2rem;
-    }
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
 
    .about-img-wrapper {
     width: 17rem;
