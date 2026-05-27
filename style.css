@@ -551,56 +551,6 @@ footer {
         padding: 1rem 1rem;
     }
     .nav-center {
-        gap: 0.5rem;
-    }
-    .nav-center li {
-        font-size: 0.7rem;
-    }
-    .nav-icons {
-        gap: 0.8rem;
-        font-size: 1rem;
-        right: 1rem;
-    }
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-    }
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-        gap: 3rem;
-    }
-    .about-img-wrapper {
-        width: 17rem;
-        height: 22rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-   .about-pic {
-    width: 20rem;
-    height: 25rem;
-    object-fit: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0 0.9375rem 2.1875rem rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    /* هذا هو السطر الذي يحرك الصور لليمين داخل الحاوية */
-    left: 2rem; 
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease;
-}
-
-/* في الموبايل نعيد الصور للمنتصف لضمان عدم خروجها عن الشاشة */
-@media (max-width: 48rem) {
-    .about-pic {
-        left: 0;
-        width: 17rem;
-        height: 22rem;
-    }
-}
-    .nav-center {
         gap: 0.3rem;
     }
     .nav-center li {
@@ -609,10 +559,41 @@ footer {
     .nav-icons {
         gap: 0.4rem;
         font-size: 0.8rem;
+        right: 1rem;
     }
     .hero-content h1 {
         font-size: 2rem;
     }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 3rem;
+    }
+    
+    .about-img-wrapper {
+        width: 17rem;
+        height: 22rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .about-pic {
+        width: 17rem;
+        height: 22rem;
+        left: 0;
+        margin: 0 auto;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.9375rem 2.1875rem rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        transition: opacity 0.6s ease-in-out, transform 0.6s ease;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
